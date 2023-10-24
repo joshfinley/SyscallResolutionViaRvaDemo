@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SyscallResolutionViaRvaSortDemo", "SyscallResolutionViaRvaSortDemo\SyscallResolutionViaRvaSortDemo.vcxproj", "{0A81C922-1FEF-447B-A8D8-85C2D44AA541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A81C922-1FEF-447B-A8D8-85C2D44AA541}.Debug|x64.ActiveCfg = Debug|x64
+		{0A81C922-1FEF-447B-A8D8-85C2D44AA541}.Debug|x64.Build.0 = Debug|x64
+		{0A81C922-1FEF-447B-A8D8-85C2D44AA541}.Debug|x86.ActiveCfg = Debug|Win32
+		{0A81C922-1FEF-447B-A8D8-85C2D44AA541}.Debug|x86.Build.0 = Debug|Win32
+		{0A81C922-1FEF-447B-A8D8-85C2D44AA541}.Release|x64.ActiveCfg = Release|x64
+		{0A81C922-1FEF-447B-A8D8-85C2D44AA541}.Release|x64.Build.0 = Release|x64
+		{0A81C922-1FEF-447B-A8D8-85C2D44AA541}.Release|x86.ActiveCfg = Release|Win32
+		{0A81C922-1FEF-447B-A8D8-85C2D44AA541}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4A2604E-42BF-4BF0-92AB-C8FEA719AAC6}
+	EndGlobalSection
+EndGlobal
