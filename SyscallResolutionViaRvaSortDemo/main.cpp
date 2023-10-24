@@ -7,27 +7,27 @@
 
 BOOL ResolveSyscalls(PSYSCALL_TABLE SyscallTable)
 {
-    BOOL			Status				= FALSE;
-    PCHAR			DllName				= NULL;
-    PCHAR			FunctionName		= NULL;
-    DWORD			i, j				= NULL;
-    SIZE_T			NameLen				= NULL;
-    DWORD			SyscallRVA			= NULL;
-    DWORD			NumberOfNames		= NULL;
-    DWORD			VirtualAddress		= NULL;
-    DWORD			Entires				= NULL;
-    DWORD			CurrentSyscallNum	= NULL;
-    PDWORD			Functions			= NULL;
-    PDWORD			Names				= NULL;
-    PWORD			Ordinals			= NULL;
-    HMODULE			NtdllBase			= NULL;
+    BOOL Status = FALSE;
+    PCHAR DllName = NULL;
+    PCHAR FunctionName = NULL;
+    DWORD i, j = NULL;
+    SIZE_T NameLen = NULL;
+    DWORD SyscallRVA = NULL;
+    DWORD NumberOfNames = NULL;
+    DWORD VirtualAddress = NULL;
+    DWORD Entires = NULL;
+    DWORD CurrentSyscallNum = NULL;
+    PDWORD Functions = NULL;
+    PDWORD Names = NULL;
+    PWORD Ordinals = NULL;
+    HMODULE NtdllBase = NULL;
 
-    PIMAGE_DOS_HEADER		DosHeader	= NULL;
-    PIMAGE_NT_HEADERS		NtHeaders	= NULL;
-    PIMAGE_DATA_DIRECTORY	DataDir		= NULL;
-    PIMAGE_EXPORT_DIRECTORY ExportDir	= NULL;
-    PSYSCALL_ENTRY			TableEntry	= NULL;
-    SYSCALL_ENTRY			CurrentEntry = { NULL };
+    PIMAGE_DOS_HEADER DosHeader = NULL;
+    PIMAGE_NT_HEADERS NtHeaders = NULL;
+    PIMAGE_DATA_DIRECTORY DataDir = NULL;
+    PIMAGE_EXPORT_DIRECTORY ExportDir = NULL;
+    PSYSCALL_ENTRY TableEntry = NULL;
+    SYSCALL_ENTRY CurrentEntry = { NULL };
 
     // Check params
     if (!SyscallTable)
@@ -153,9 +153,9 @@ BOOL ResolveSyscalls(PSYSCALL_TABLE SyscallTable)
 
 INT main()
 {
-    BOOL			Ok				= FALSE;
-    DWORD			Status			= ERROR_SUCCESS;
-    PSYSCALL_TABLE	SyscallTable	= NULL;
+    BOOL Ok = FALSE;
+    DWORD Status = ERROR_SUCCESS;
+    PSYSCALL_TABLE SyscallTable = NULL;
 
     SyscallTable = (PSYSCALL_TABLE)HeapAlloc(
         GetProcessHeap(), NULL, sizeof(SYSCALL_TABLE)
