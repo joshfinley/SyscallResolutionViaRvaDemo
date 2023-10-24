@@ -147,6 +147,7 @@ BOOL ResolveSyscalls(PSYSCALL_TABLE SyscallTable)
 		SyscallTable->Entries[i].SyscallNumber = i;
 	}
 
+	Status = TRUE;
 	return Status;
 }
 
